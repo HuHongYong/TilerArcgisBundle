@@ -14,7 +14,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                ArcgisBundleHelper Helper = new ArcgisBundleHelper(@"F:\HHY公司\工作研究\arcgis紧凑型切片读取\tiler-arcgis-bundle-master\test\sample");
+                ArcgisBundleHelper Helper = new ArcgisBundleHelper(@"G:\feiq\Recv Files\Map_test\map");
                 var data = Helper.GetTile(x, y, z);
                 return File(data, "image/jpeg");
             }

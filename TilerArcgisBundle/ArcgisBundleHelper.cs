@@ -52,6 +52,7 @@ namespace TilerArcgisBundle
             var format = this.storageFormat;
             var rGroup = Convert.ToInt32(packSize * Convert.ToInt32(y / packSize));
             var cGroup = Convert.ToInt32(packSize * Convert.ToInt32(x / packSize));
+
             var bundleBase = getBundlePath(this.rootPath, z, rGroup, cGroup);
             var bundleFileName = bundleBase + ".bundle";
             var context = new bundlx()

@@ -21,7 +21,11 @@ namespace WebApplication1.Common
         {
             get
             {
-                return AddBundleCache(id);
+                    lock (obj)
+                    {
+                        return AddBundleCache(id);
+                    }
+
             }
         }
         private static volatile TileCache instance;
