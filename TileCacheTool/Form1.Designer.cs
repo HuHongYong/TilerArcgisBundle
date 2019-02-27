@@ -60,7 +60,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(576, 21);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "F:\\HHY公司\\工作研究\\arcgis紧凑型切片读取\\tiler-arcgis-bundle-master\\test\\sample\\_alllayers";
+            this.textBox1.Text = "G:\\feiq\\Recv Files\\Map_test\\map\\_alllayers";
             // 
             // label1
             // 
@@ -138,7 +138,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(59, 21);
             this.textBox4.TabIndex = 25;
-            this.textBox4.Text = "11-11";
+            this.textBox4.Text = "1-3";
             // 
             // textBox5
             // 
@@ -146,7 +146,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(106, 21);
             this.textBox5.TabIndex = 24;
-            this.textBox5.Text = "114.91,39.04";
+            this.textBox5.Text = "-180,-85";
             // 
             // textBox6
             // 
@@ -154,7 +154,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(106, 21);
             this.textBox6.TabIndex = 23;
-            this.textBox6.Text = "112.37,40.82";
+            this.textBox6.Text = "180,85";
             // 
             // label7
             // 

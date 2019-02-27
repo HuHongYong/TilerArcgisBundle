@@ -250,15 +250,15 @@ namespace TileCacheTool
             //根据索引和字节数读出文件位置
             tileData = bufferfile.Skip(offset + 4).Take(length).ToArray();
             string L="L"+ zeroPad(z, 2);
-            string R = "R" + zeroPad(x, 8,1);
-            string C = "C" + zeroPad(y-1, 8,1);
-            string path = textBox2.Text+"\\"+L+"\\"+R;
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
+            string C = "C" + zeroPad(x, 8,1);
+            string R = "R" + zeroPad(y, 8,1);
             if (tileData.Length > 0)
             {
+                string path = textBox2.Text + "\\" + L + "\\" + R;
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
                 using (FileStream stream = new FileStream(path+"\\"+C + ".png", FileMode.OpenOrCreate))
                 {
                     stream.Write(tileData, 0, tileData.Length);
